@@ -28,7 +28,9 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"eslint.config.mjs",
-		"prettier.config.mjs"
+		"prettier.config.mjs",
+		"next.config.mjs"
 	],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"types": ["webpack-env"]
 }

@@ -17,6 +17,9 @@ const config = {
 	tabWidth: 4,
 	trailingComma: 'es5',
 	useTabs: true,
+
+	tailwindFunctions: ['clsx', 'tw', 'cn', 'clsx'],
+	tailwindPreserveWhitespace: true,
 	plugins: ['prettier-plugin-tailwindcss'],
 }
 
