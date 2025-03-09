@@ -7,7 +7,7 @@ import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/
 import { cn } from '@/lib/utils'
 
 type IImageZoomProps = {
-	description?: string
+	description?: string | React.ReactNode
 	imageClassName?: string
 	lazy?: boolean
 } & React.ComponentPropsWithoutRef<typeof Image>
@@ -17,7 +17,7 @@ const ImageZoom = forwardRef<HTMLImageElement, IImageZoomProps>((props, ref) => 
 
 	return (
 		<Dialog>
-			<DialogTitle />
+			<DialogTitle className="hidden" />
 			<DialogTrigger asChild role="button">
 				<BlurImage
 					ref={ref}

@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 import { FlatCompat } from '@eslint/eslintrc'
 import eslintPluginPrettier from 'eslint-plugin-prettier'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
+// import * as tailwindcss from 'eslint-plugin-tailwindcss'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -47,7 +48,13 @@ const eslintConfig = [
 		plugins: {
 			prettier: eslintPluginPrettier,
 			simpleImportSort,
+			// tailwindcss,
 		},
+		// settings: {
+		// 	tailwindcss: {
+		// 		callees: ['cn', 'clsx', 'classnames'],
+		// 	},
+		// },
 		rules: {
 			'prettier/prettier': 'warn',
 			'no-console': ['warn', { allow: ['warn', 'error'] }],
@@ -80,10 +87,11 @@ const eslintConfig = [
 			'import/extensions': 'off', // Avoid missing file extension errors, TypeScript already provides a similar feature
 			'unused-imports/no-unused-imports': 'off',
 
-			// tailwindcss / eslintPluginPrettierRecommended
 			// 'tailwindcss/classnames-order': 'warn',
 			// 'tailwindcss/no-contradicting-classname': 'error',
 			// 'tailwindcss/no-custom-classname': 'off',
+
+			'react/jsx-no-undef': 'off',
 		},
 	},
 ]

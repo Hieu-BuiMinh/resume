@@ -13,8 +13,11 @@ function HomePageView() {
 		notFound()
 	}
 	return (
-		<div>
-			<ModeToggle />
+		<div className="relative">
+			<div className="sticky inset-0 top-2">
+				<ModeToggle />
+			</div>
+
 			<div className="container m-auto flex max-w-screen-lg flex-col gap-3">
 				<article className="container prose mx-auto max-w-full pb-6 dark:prose-invert">
 					<MDXContent code={post.body} />

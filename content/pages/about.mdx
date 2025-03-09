@@ -1,8 +1,8 @@
 ---
 id: '861af647-236a-48b1-9b57-815ba57c405d'
 title: 'About me'
-date: '2024-08-22T00:00:00Z'
-lastUpdated: '2025-03-03T08:16:58.000Z'
+date: '2025-02-22T00:00:00Z'
+lastUpdated: '2025-03-10T08:16:58.000Z'
 description: "I'm Hieu A Frontend Developer Creating websites using React."
 author:
     {
@@ -15,37 +15,108 @@ published: true
 hashTags: { category: 'about', tags: ['about'] }
 ---
 
-<div className=""></div>
+<div className="relative flex items-center justify-start gap-5 flex-col md:flex-row">
+	<div className="flex flex-col items-center justify-center shrink-0">
+	    <div className="text-2xl text-center font-bold pt-3 md:text-4xl md:text-left">Bui Minh Hieu</div>
 
-<div className="text-2xl text-center font-bold pt-3 md:text-4xl md:text-left">Hieu-buiminh</div>
+    	<Image
+    		width={500}
+    		height={500}
+    		unoptimized={false}
+    		src="/assets/images/avt/me.png"
+    		alt=""
+    		imageClassName="m-0"
+    		className="mt-2 size-36 md:size-56 flex-shrink-0 saturate-100"
+    		description={
+    			<div>
+    				<div>VungTau - Vietnam</div>
+    				<div>July 30, 2024</div>
+    			</div>
+    		}
+    	/>
 
-<div className="text-sm text-center text-muted-foreground md:text-left">-Walter Cipher ⟁-</div>
+    	<div className="text-sm text-center text-muted-foreground mt-2 md:text-left">-Walter Cipher ⟁-</div>
 
-<div className="not-prose text-center text-sm text-muted-foreground my-3 md:text-left md:m-0 md:mt-3">
-	A self-taught Front-End Engineer in Vietnam
-</div>
-
-<div className="relative pb-12 flex items-center justify-start gap-5 flex-col md:flex-row">
-
-    <div>
-        <p className="not-prose">Detail-oriented Front-End Engineer with a strong focus on building intuitive, high-quality web applications, and a passion for creating smooth and efficient user experiences using the latest technologies.</p>
+    	<div className="not-prose text-center text-sm text-muted-foreground my-1 md:my-3">
+    		A self-taught Front-End Engineer in Vietnam
+    	</div>
     </div>
 
-    <Image
-        width={500}
-        height={500}
-        unoptimized={false}
-        src="/assets/images/avt/me.png"
-        alt=""
-        className="w-full h-64 md:size-72 flex-shrink-0 saturate-100"
-        description={
-             <div>
-                <div>VungTau - Vietnam</div>
-                <div>July 30, 2024</div>
-            </div>
-        }
-    />
+    <div className="flex flex-col gap-6 md:gap-3">
+    	<div className="not-prose">
+    		Detail-oriented Front-End Engineer with a strong focus on building intuitive, high-quality web
+    		applications, and a passion for creating smooth and efficient user experiences using the latest
+    		technologies.
+    	</div>
+
+        <div className="w-full h-[1px] border-t border-muted border-dashed"/>
+
+        <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+            <a href="https://hieu-buiminh.io.vn/" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Globe className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+            <a href="mailto:minhhieu2122000@gmail.com" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Mailbox className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+            <a href="tel:+84838739523" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Smartphone className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+            <a href="https://github.com/Hieu-BuiMinh" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Github className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+            <a href="https://www.linkedin.com/in/minh-hieu-bui-78a315208" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Linkedin className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+            <a href="https://x.com/Walter_BM_777" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Twitter className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+            <a href="https://www.instagram.com/walter.02.12/" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
+                <LucideIcons.Instagram className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+            </a>
+        </div>
+
+        <div className="w-full flex items-center justify-end">
+            <Image
+                width={500}
+                height={500}
+                unoptimized={false}
+                src="/assets/images/qr/qr-code.svg"
+                alt=""
+                className="size-16 hidden md:flex md:size-32 flex-shrink-0"
+            />
+        </div>
+    </div>
 
 </div>
 
 
+## About
+
+<div>
+    <div className="not-prose">
+        Hello! You can call me <b>Walter Cipher</b>. I am a 25-year-old Front-End Engineer from Vietnam, born in 2000. I specialize in the React ecosystem and have experience working with TypeScript, Next.js, React.js, Node.js, and database management. Currently, I am passionate about learning UI/UX design.
+    </div>
+
+    I started learning web development on December 5, 2020 (I was 20 years old). It's a big challenge because it's just one of my hobbies, and I have yet to take any courses. I am self-learning on YouTube. Some of my favorite YouTube channels are [The Net Ninja](https://www.youtube.com/@NetNinja), [Code With Antonio](https://www.youtube.com/@codewithantonio), [Cosden Solutions](https://www.youtube.com/@cosdensolutions). I learned a lot of web development skills from them.
+    I love using [Next.js](https://nextjs.org/) to create a website. Then use [GitHub](https://github.com) to host my codebase. After that, I use [Vercel](https://vercel.com) to deploy it. Here are my current favorite tech stack
+
+    <div className="mt-6 flex gap-4 flex-wrap">
+        <span className="flex items-center size-8"><SVGIcons.NextJS className="border border-foreground/50 rounded-full" /></span>
+        <span className="flex items-center size-8"><SVGIcons.React /></span>
+        <span className="flex items-center size-8"><SVGIcons.TypeScript /></span>
+        <span className="flex items-center size-8"><SVGIcons.Turborepo /></span>
+        <span className="flex items-center size-8"><SVGIcons.Tanstack /></span>
+        <span className="flex items-center size-8"><SVGIcons.TailwindCSS /></span>
+        <span className="flex items-center size-8"><SVGIcons.Vercel /></span>
+        <span className="flex items-center size-8"><SVGIcons.Figma /></span>
+    </div>
+
+</div>
+
+## Work Experience
+
+## Education
+
+## Skills
+
+## Personal projects

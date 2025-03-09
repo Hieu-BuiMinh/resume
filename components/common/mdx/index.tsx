@@ -1,7 +1,6 @@
 'use client'
 
-import './style/code-block.css'
-
+import * as LucideIcons from 'lucide-react'
 import { nanoid } from 'nanoid'
 import Link from 'next/link'
 import * as runtime from 'react/jsx-runtime'
@@ -54,16 +53,17 @@ const components = {
 		return (
 			<>
 				<ImageZoom
-					className={cn('h-[530px] rounded-lg border border-muted', className)}
+					className={cn('h-[530px] rounded-lg border-muted border', className)}
 					alt={alt || ''}
 					width={1200}
 					height={630}
 					{...rest}
 				/>
-				{alt && <figcaption className="mt-4 text-center">{alt}</figcaption>}
+				{alt && <figcaption className="mt-2 text-center">{alt}</figcaption>}
 			</>
 		)
 	},
+	LucideIcons,
 	CloudinaryImage,
 	SVGIcons,
 	VideoZoom,
