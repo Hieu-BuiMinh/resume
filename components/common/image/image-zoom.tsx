@@ -28,7 +28,7 @@ const ImageZoom = forwardRef<HTMLImageElement, IImageZoomProps>((props, ref) => 
 					{...rest}
 				/>
 			</DialogTrigger>
-			<DialogContent className="h-[75vh] max-w-screen-sm overflow-hidden p-0 md:max-w-screen-md lg:max-w-screen-xl border-none">
+			<DialogContent className="h-[75vh] max-w-screen-sm overflow-hidden p-0 md:max-w-screen-md lg:max-w-screen-xl">
 				<BlurImage
 					{...rest}
 					className="aspect-video size-full"
