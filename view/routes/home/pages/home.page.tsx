@@ -14,7 +14,7 @@ function HomePageView() {
 	}
 	return (
 		<div className="relative">
-			<div className="sticky inset-0 top-2">
+			<div className="sticky inset-0 top-2 z-10">
 				<ModeToggle />
 			</div>
 

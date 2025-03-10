@@ -22,7 +22,6 @@ const eslintConfig = [
 			'dist/**',
 			'postcss.config.mjs',
 			'components/ui/*',
-			'**/tailwind.config.ts',
 			'convex/_generated/*',
 			'.velite',
 		],
@@ -42,7 +41,7 @@ const eslintConfig = [
 			},
 		},
 	},
-	...compat.extends('next/core-web-vitals', 'next/typescript'),
+	...compat.extends('next/core-web-vitals', 'next/typescript',),
 	{
 		files: ['**/*.{js,jsx,ts,tsx}'],
 		plugins: {
@@ -50,11 +49,6 @@ const eslintConfig = [
 			simpleImportSort,
 			// tailwindcss,
 		},
-		// settings: {
-		// 	tailwindcss: {
-		// 		callees: ['cn', 'clsx', 'classnames'],
-		// 	},
-		// },
 		rules: {
 			'prettier/prettier': 'warn',
 			'no-console': ['warn', { allow: ['warn', 'error'] }],
@@ -87,7 +81,7 @@ const eslintConfig = [
 			'import/extensions': 'off', // Avoid missing file extension errors, TypeScript already provides a similar feature
 			'unused-imports/no-unused-imports': 'off',
 
-			// 'tailwindcss/classnames-order': 'warn',
+			// 'tailwindcss/classnames-order': 'error',
 			// 'tailwindcss/no-contradicting-classname': 'error',
 			// 'tailwindcss/no-custom-classname': 'off',
 

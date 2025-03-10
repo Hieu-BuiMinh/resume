@@ -9,6 +9,9 @@ import { SVGIcons } from '@/components/common/icons/svg-icons'
 import CloudinaryImage from '@/components/common/image/cloudinary-image'
 import ImageZoom from '@/components/common/image/image-zoom'
 import Heading from '@/components/common/mdx/custom-components/heading'
+import ProjectBlock from '@/components/common/mdx/custom-components/project-block'
+import TechBadge from '@/components/common/mdx/custom-components/tech-badge'
+import WorkExperienceBlock from '@/components/common/mdx/custom-components/work-experience-block'
 import VideoZoom from '@/components/common/video/video-zoom'
 import { cn } from '@/lib/utils'
 
@@ -67,6 +70,9 @@ const components = {
 	CloudinaryImage,
 	SVGIcons,
 	VideoZoom,
+	TechBadge,
+	WorkExperienceBlock,
+	ProjectBlock,
 }
 
 interface MdxProps {

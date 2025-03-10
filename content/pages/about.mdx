@@ -23,7 +23,7 @@ hashTags: { category: 'about', tags: ['about'] }
     		width={500}
     		height={500}
     		unoptimized={false}
-    		src="/assets/images/avt/me.png"
+    		src="/assets/images/avt/me_01.png"
     		alt=""
     		imageClassName="m-0"
     		className="mt-2 size-36 md:size-56 flex-shrink-0 saturate-100"
@@ -89,7 +89,6 @@ hashTags: { category: 'about', tags: ['about'] }
 
 </div>
 
-
 ## About
 
 <div>
@@ -101,22 +100,146 @@ hashTags: { category: 'about', tags: ['about'] }
     I love using [Next.js](https://nextjs.org/) to create a website. Then use [GitHub](https://github.com) to host my codebase. After that, I use [Vercel](https://vercel.com) to deploy it. Here are my current favorite tech stack
 
     <div className="mt-6 flex gap-4 flex-wrap">
-        <span className="flex items-center size-8"><SVGIcons.NextJS className="border border-foreground/50 rounded-full" /></span>
-        <span className="flex items-center size-8"><SVGIcons.React /></span>
-        <span className="flex items-center size-8"><SVGIcons.TypeScript /></span>
-        <span className="flex items-center size-8"><SVGIcons.Turborepo /></span>
-        <span className="flex items-center size-8"><SVGIcons.Tanstack /></span>
-        <span className="flex items-center size-8"><SVGIcons.TailwindCSS /></span>
-        <span className="flex items-center size-8"><SVGIcons.Vercel /></span>
-        <span className="flex items-center size-8"><SVGIcons.Figma /></span>
+        <a href="https://nextjs.org/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.NextJS className="border border-foreground/50 rounded-full" /></span>
+        </a>
+        <a href="https://reactjs.org/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.React /></span>
+        </a>
+        <a href="https://www.typescriptlang.org/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.TypeScript /></span>
+        </a>
+        <a href="https://turborepo.org/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.Turborepo /></span>
+        </a>
+        <a href="https://tanstack.com/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.Tanstack /></span>
+        </a>
+        <a href="https://tailwindcss.com/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.TailwindCSS /></span>
+        </a>
+        <a href="https://vercel.com/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.Vercel /></span>
+        </a>
+        <a href="https://www.figma.com/" target="_blank">
+            <span className="flex items-center size-8"><SVGIcons.Figma /></span>
+        </a>
     </div>
 
 </div>
 
 ## Work Experience
 
+<div className="flex flex-col gap-3">
+	<WorkExperienceBlock
+		title={{
+			text: 'Software Developer',
+			href: '/projects/software-developer',
+			subTitle: 'Developing awesome stuff!',
+		}}
+		time="June 2021 - Present"
+		description="I worked on building innovative applications that help solve real-world problems."
+		techStacks={[
+			{ text: 'React', href: 'https://reactjs.org' },
+			{ text: 'Node.js', href: 'https://nodejs.org' },
+			{ text: 'TypeScript', href: 'https://www.typescriptlang.org' },
+		]}
+	/>
+</div>
+
 ## Education
+
+<div className="flex flex-col gap-3">
+    <WorkExperienceBlock
+        title={{
+            text: 'Bachelor of Information Technology',
+            href: 'https://ctd.ueh.edu.vn/en/chi-tiet-dao-tao/cu-nhan-dai-hoc-chinh-quy-chuong-trinh-he-thong-thong-tin-kinh-doanh-chuong-trinh-chuan/',
+            subTitle: 'University of Economics Ho Chi Minh City'
+        }}
+        time="2018 - 2022"
+    />
+
+    <WorkExperienceBlock
+        title={{
+            text: 'Front-end programmer vocational',
+            href: 'https://www.tuyensinhdaihanvietuc.com/',
+            subTitle: 'Vietnam Australia Vocational College'
+        }}
+        time="2020 - 2022"
+    />
+
+</div>
 
 ## Skills
 
+<div className="flex flex-wrap gap-3">
+	<TechBadge content="React.js" href="https://react.dev/" className="" />
+	<TechBadge content="Next.js" href="https://nextjs.org/" className="" />
+	<TechBadge content="Turborepo" href="https://turbo.build/repo/docs" className="" />
+	<TechBadge content="Convex" href="https://www.convex.dev/" className="" />
+	<TechBadge content="TypeScript" href="#" className="" />
+	<TechBadge content="Tailwind CSS" href="https://tailwindcss.com/" className="" />
+	<TechBadge content="Tanstack" href="#" className="" />
+	<TechBadge content="Mantine UI" href="https://mantine.dev/" className="" />
+	<TechBadge content="Shadcn UI" href="https://ui.shadcn.com/" className="" />
+	<TechBadge content="MUI" href="https://mui.com/" className="" />
+	<TechBadge content="AntD" href="https://ant.design/" className="" />
+	<TechBadge content="Figma" href="https://www.figma.com/" className="" />
+	<TechBadge content="Design Systems" className="" />
+</div>
+
 ## Personal projects
+
+<div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+    <ProjectBlock
+        title={{
+            text: 'Personal Blog',
+            href: 'https://hieu-buiminh.io.vn/',
+            subTitle: 'My personal website and blog using Next-js 15, Tailwind css and Shadcn UI',
+        }}
+        description="I started learning web development in December 2020 to create a blog for sharing tutorials and reflections. After learning HTML,  CSS, and JavaScript, I wanted more flexibility than a static website could offer."
+        techStacks={[
+            { text: 'Next.js', href: 'https://nextjs.org' },
+            { text: 'Shadcn UI', href: 'https://ui.shadcn.com/' },
+            { text: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+            { text: 'Convex', href: 'https://www.convex.dev/' },
+            { text: 'Clerk', href: 'https://clerk.com/' },
+            { text: 'Velite js', href: 'https://velite.js.org/' },
+        ]}
+        time="2024 - Present"
+    />
+
+    <ProjectBlock
+        title={{
+            text: 'Minimalist Resume',
+            href: '/',
+            subTitle: 'An open source minimalist CV template with a focus on readability and clean design.',
+        }}
+        description="A clean and modern design utilizing Next.js, Shadcn UI, and Tailwind CSS to create a seamless, responsive web experience with a focus on simplicity and efficiency."
+        techStacks={[
+            { text: 'Next.js', href: 'https://nextjs.org' },
+            { text: 'Shadcn UI', href: 'https://ui.shadcn.com/' },
+            { text: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+        ]}
+        time="2024 - Present"
+    />
+
+    <ProjectBlock
+        title={{
+            text: 'Personal Blog',
+            href: 'https://hieu-buiminh.io.vn/',
+            subTitle: 'A Fullstack Notion Clone Repository',
+        }}
+        description="This project is a simplified clone of the Notion app, allowing users to create, edit, and organize notes with a flexible interface. The backend uses Convex for real-time database, Edgestore for managing images and files, and Clerk for secure user authentication."
+        techStacks={[
+            { text: 'Next.js', href: 'https://nextjs.org' },
+            { text: 'Shadcn UI', href: 'https://ui.shadcn.com/' },
+            { text: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+            { text: 'Convex', href: 'https://www.convex.dev/' },
+            { text: 'Clerk', href: 'https://clerk.com/' },
+            { text: 'Edgestore', href: 'https://edgestore.dev/' },
+        ]}
+        time="2024"
+    />
+
+</div>
