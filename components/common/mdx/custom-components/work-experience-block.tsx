@@ -14,13 +14,25 @@ function WorkExperienceBlock({ description, techStacks, time, title }: IWorkExpe
 	return (
 		<div className="flex flex-col gap-2 group">
 			<div className="flex items-center justify-between">
-				<Link href={title?.href || ''}>{title?.text}</Link>
+				{title?.href ? (
+					<Link
+						target="_blank"
+						className="text-green-600 transition-colors hover:text-foreground hover:underline dark:text-green-400"
+						href={title?.href || ''}
+					>
+						{title?.text}
+					</Link>
+				) : (
+					<div className="font-semibold text-green-600 no-underline transition-colors hover:text-foreground hover:underline dark:text-green-400">
+						{title?.text}
+					</div>
+				)}
 
 				<div className="text-sm text-muted-foreground">{time}</div>
 			</div>
 			<div className="text-sm text-muted-foreground font-semibold">{title?.subTitle}</div>
 
-			<div className="">{description}</div>
+			{description}
 
 			<div className="flex flex-wrap gap-2">
 				{techStacks?.map((tech) => {

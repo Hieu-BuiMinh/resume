@@ -56,7 +56,7 @@ hashTags: { category: 'about', tags: ['about'] }
                 <LucideIcons.Globe className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
             </a>
             <a href="mailto:minhhieu2122000@gmail.com" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
-                <LucideIcons.Mailbox className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
+                <LucideIcons.Mail className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
             </a>
             <a href="tel:+84838739523" target="_blank" className="size-8 border border-muted rounded-sm flex items-center justify-center group">
                 <LucideIcons.Smartphone className="size-5 text-muted-foreground group-hover:text-foreground transition-colors"/>
@@ -93,7 +93,7 @@ hashTags: { category: 'about', tags: ['about'] }
 
 <div>
     <div className="not-prose">
-        Hello! You can call me <b>Walter Cipher</b>. I am a 25-year-old Front-End Engineer from Vietnam, born in 2000. I specialize in the React ecosystem and have experience working with TypeScript, Next.js, React.js, Node.js, and database management. Currently, I am passionate about learning UI/UX design.
+        Hello! You can call me <b className="underline">Walter Cipher</b>. I am a 25-year-old Front-End Engineer from Vietnam, born in 2000. I specialize in the React ecosystem and have experience working with TypeScript, Next.js, React.js, Node.js, and database management. Currently, I am passionate about learning UI/UX design.
     </div>
 
     I started learning web development on December 5, 2020 (I was 20 years old). It's a big challenge because it's just one of my hobbies, and I have yet to take any courses. I am self-learning on YouTube. Some of my favorite YouTube channels are [The Net Ninja](https://www.youtube.com/@NetNinja), [Code With Antonio](https://www.youtube.com/@codewithantonio), [Cosden Solutions](https://www.youtube.com/@cosdensolutions). I learned a lot of web development skills from them.
@@ -126,66 +126,6 @@ hashTags: { category: 'about', tags: ['about'] }
         </a>
     </div>
 
-</div>
-
-## Work Experience
-
-<div className="flex flex-col gap-3">
-	<WorkExperienceBlock
-		title={{
-			text: 'Software Developer',
-			href: '/projects/software-developer',
-			subTitle: 'Developing awesome stuff!',
-		}}
-		time="June 2021 - Present"
-		description="I worked on building innovative applications that help solve real-world problems."
-		techStacks={[
-			{ text: 'React', href: 'https://reactjs.org' },
-			{ text: 'Node.js', href: 'https://nodejs.org' },
-			{ text: 'TypeScript', href: 'https://www.typescriptlang.org' },
-		]}
-	/>
-</div>
-
-## Education
-
-<div className="flex flex-col gap-3">
-    <WorkExperienceBlock
-        title={{
-            text: 'Bachelor of Information Technology',
-            href: 'https://ctd.ueh.edu.vn/en/chi-tiet-dao-tao/cu-nhan-dai-hoc-chinh-quy-chuong-trinh-he-thong-thong-tin-kinh-doanh-chuong-trinh-chuan/',
-            subTitle: 'University of Economics Ho Chi Minh City'
-        }}
-        time="2018 - 2022"
-    />
-
-    <WorkExperienceBlock
-        title={{
-            text: 'Front-end programmer vocational',
-            href: 'https://www.tuyensinhdaihanvietuc.com/',
-            subTitle: 'Vietnam Australia Vocational College'
-        }}
-        time="2020 - 2022"
-    />
-
-</div>
-
-## Skills
-
-<div className="flex flex-wrap gap-3">
-	<TechBadge content="React.js" href="https://react.dev/" className="" />
-	<TechBadge content="Next.js" href="https://nextjs.org/" className="" />
-	<TechBadge content="Turborepo" href="https://turbo.build/repo/docs" className="" />
-	<TechBadge content="Convex" href="https://www.convex.dev/" className="" />
-	<TechBadge content="TypeScript" href="#" className="" />
-	<TechBadge content="Tailwind CSS" href="https://tailwindcss.com/" className="" />
-	<TechBadge content="Tanstack" href="#" className="" />
-	<TechBadge content="Mantine UI" href="https://mantine.dev/" className="" />
-	<TechBadge content="Shadcn UI" href="https://ui.shadcn.com/" className="" />
-	<TechBadge content="MUI" href="https://mui.com/" className="" />
-	<TechBadge content="AntD" href="https://ant.design/" className="" />
-	<TechBadge content="Figma" href="https://www.figma.com/" className="" />
-	<TechBadge content="Design Systems" className="" />
 </div>
 
 ## Personal projects
@@ -240,6 +180,164 @@ hashTags: { category: 'about', tags: ['about'] }
             { text: 'Edgestore', href: 'https://edgestore.dev/' },
         ]}
         time="2024"
+    />
+
+</div>
+
+## Skills
+
+<div className="flex flex-wrap gap-3">
+	<TechBadge content="React.js" href="https://react.dev/" className="" />
+	<TechBadge content="Next.js" href="https://nextjs.org/" className="" />
+	<TechBadge content="Turborepo" href="https://turbo.build/repo/docs" className="" />
+	<TechBadge content="Convex" href="https://www.convex.dev/" className="" />
+	<TechBadge content="TypeScript" href="#" className="" />
+	<TechBadge content="Tailwind CSS" href="https://tailwindcss.com/" className="" />
+	<TechBadge content="Tanstack" href="#" className="" />
+	<TechBadge content="Mantine UI" href="https://mantine.dev/" className="" />
+	<TechBadge content="Shadcn UI" href="https://ui.shadcn.com/" className="" />
+	<TechBadge content="MUI" href="https://mui.com/" className="" />
+	<TechBadge content="AntD" href="https://ant.design/" className="" />
+	<TechBadge content="Figma" href="https://www.figma.com/" className="" />
+	<TechBadge content="Design Systems" className="" />
+</div>
+
+## Education
+
+<div className="flex flex-col gap-3">
+    <WorkExperienceBlock
+        title={{
+            text: 'Bachelor of Information Technology',
+            href: 'https://ctd.ueh.edu.vn/en/chi-tiet-dao-tao/cu-nhan-dai-hoc-chinh-quy-chuong-trinh-he-thong-thong-tin-kinh-doanh-chuong-trinh-chuan/',
+            subTitle: 'University of Economics Ho Chi Minh City'
+        }}
+        time="2018 - 2022"
+    />
+
+    <WorkExperienceBlock
+        title={{
+            text: 'Front-end programmer vocational',
+            href: 'https://www.tuyensinhdaihanvietuc.com/',
+            subTitle: 'Vietnam Australia Vocational College'
+        }}
+        time="2020 - 2022"
+    />
+
+</div>
+
+
+## Work Experience
+
+<div className="flex flex-col gap-5">
+	<WorkExperienceBlock
+		title={{
+			text: 'BIM-Next App',
+			href: 'https://bimnext.dpunity.com/',
+			subTitle: <a target="_blank" className="no-underline" href="https://www.idecovietnam.com/">[ IDECO ]</a>
+		}}
+		time="2024 - Present"
+		description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+		techStacks={[
+			{ text: 'Next js', href: 'https://nextjs.org/' },
+			{ text: 'MUI', href: 'https://mui.com/' },
+			{ text: 'TypeScript', href: 'https://www.typescriptlang.org' },
+			{ text: 'Tanstack', href: 'https://tanstack.com/' },
+		]}
+	/>
+
+    <WorkExperienceBlock
+    	title={{
+    		text: 'Pluxee Vietnam',
+    		href: 'https://www.pluxee.vn/',
+    		subTitle: <a target="_blank" className="no-underline" href="https://softworldvietnam.com/">[ Softworld Vietnam ]</a>,
+    	}}
+    	time="2022 - 2023"
+    	description="Distributing web app systems, buying vouchers and promotional codes, posting news information, buying phone cards, scanning QR codes, promoting the brand, and becoming a partner with the parent company. Focus on customers, consumers, and employee benefits"
+    	techStacks={[
+    		{ text: 'Next js', href: 'https://nextjs.org/' },
+    		{ text: 'Mantine UI', href: 'https://mantine.dev/' },
+    		{ text: 'Tanstack', href: 'https://tanstack.com/' },
+    		{ text: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+    		{ text: 'TypeScript', href: 'https://www.typescriptlang.org' },
+    	]}
+    />
+    <WorkExperienceBlock
+    	title={{
+    		text: 'Pluxee admin site',
+    		subTitle: <a target="_blank" className="no-underline" href="https://softworldvietnam.com/">[ Softworld Vietnam ]</a>,
+    	}}
+    	time="2022 - 2023"
+    	description="Voucher distribution management system to manage articles, customer lists, user accounts, brands, promotions and notifications to users"
+    	techStacks={[
+    		{ text: 'React js', href: 'https://reactjs.org' },
+            { text: 'Tanstack', href: 'https://tanstack.com/' },
+            { text: 'AntD', href: 'https://ant.design/' },
+            { text: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+            { text: 'TypeScript', href: 'https://www.typescriptlang.org' },
+    	]}
+    />
+    <WorkExperienceBlock
+    	title={{
+    		text: 'Thiso-mall admin site',
+    		subTitle: <a target="_blank" className="no-underline" href="https://softworldvietnam.com/">[ Softworld Vietnam ]</a>,
+    	}}
+    	time="2022 - 2023"
+    	description="Thiso Mall Salas system allows admins to manage articles, brand management, promotions, user information, mall map management, receipt scanning history, and event schedule to enhance the Experience amenities that help you visit and shop more safely, conveniently, and completely."
+        techStacks={[
+            { text: 'React js', href: 'https://reactjs.org' },
+            { text: 'Tanstack', href: 'https://tanstack.com/' },
+            { text: 'AntD', href: 'https://ant.design/' },
+            { text: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+            { text: 'TypeScript', href: 'https://www.typescriptlang.org' },
+        ]}
+    />
+    <WorkExperienceBlock
+    	title={{
+    		text: 'TConnect',
+            href:"https://tconnect.innovation.com.vn/",
+    		subTitle: <a target="_blank" className="no-underline" href="https://www.tma.vn/">[ TMA Solutions ]</a>,
+    	}}
+    	time="2021 - 2022"
+    	description={
+            <>
+                As a project to manage projects, manage many projects in the system in the form of a dash board Statistics of projects being managed by each account equipment management Monthly statistics of alarms... The alt screen notifies the device error
+                There are 3 types of accounts:
+
+                <li className="!m-0">Manager (all role)</li>
+                <li className="!m-0">Supervisor: manage a project, only one supervisor</li>
+                <li className="!m-0">Technician: no permission to add update</li>
+            </>
+        }
+        techStacks={[
+            { text: 'React js', href: 'https://reactjs.org' },
+            { text: 'AntD', href: 'https://ant.design/' },
+            { text: 'Axios', href: 'https://axios-http.com/docs/intro' },
+            { text: 'SCSS', href: 'https://sass-lang.com/documentation/syntax/' },
+        ]}
+    />
+    <WorkExperienceBlock
+    	title={{
+    		text: 'RMS-Container',
+            href:"https://rms.tanthanhcontainer.com/",
+    		subTitle: <a target="_blank" className="no-underline" href="https://www.tma.vn/">[ TMA Solutions ]</a>,
+    	}}
+    	time="2021 - 2022"
+    	description={
+            <>
+                RMS - Reefer Monitoring System is a system to help manage reefer containers remotely with the main features:
+                <li className="!m-0">Customer management</li>
+                <li className="!m-0">Equipment Management (Containers)</li>
+                <li className="!m-0">View container status in real time</li>
+                <li className="!m-0">Get alert</li>
+                <li className="!m-0">Download PTI Log</li>
+            </>
+        }
+        techStacks={[
+            { text: 'React js', href: 'https://reactjs.org' },
+            { text: 'AntD', href: 'https://ant.design/' },
+            { text: 'Axios', href: 'https://axios-http.com/docs/intro' },
+            { text: 'SCSS', href: 'https://sass-lang.com/documentation/syntax/' },
+        ]}
     />
 
 </div>
