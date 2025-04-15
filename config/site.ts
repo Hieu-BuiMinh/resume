@@ -5,21 +5,22 @@ export const isProduction = process.env.NODE_ENV === 'production'
 
 export const SITE_CONFIG = {
 	name: 'Hieu.BuiMinh',
-	shortName: 'Hieu.BM - Resume',
-	url: isProduction ? 'https://hieu-buiminh.vercel.app/' : 'http://localhost:3000',
-	description: 'Detail-oriented Front-end Engineer dedicated to building high-quality products with React ecosystem',
+	shortName: 'Hieu.BM',
+	url: isProduction ? 'https://hieu-buiminh.io.vn/' : 'http://localhost:3000',
+	resume: 'https://hieu-buiminh-resume.io.vn/',
+	description: 'Next js 15 blog using velite, tailwind and shadcn',
 	siteKeywords: ['hieu.buiminh', 'next.js', 'react', 'typeScript', 'node.js', 'tailwind', 'shadcn'],
 	og: '/assets/images/og.png',
 	author: {
-		avatar: '/assets/images/avt/me_01.png',
+		avatar: '/assets/images/avt/avt_001.jpg',
 		name: 'Hieu.BuiMinh',
-		nickname: 'Walter',
+		nickname: 'Stephen.K',
 		github: 'https://github.com/Hieu-BuiMinh',
 	},
 	links: {
 		twitter: 'https://x.com/Walter_BM_777',
 		youtube: 'https://www.youtube.com/@hieu-bm-0212',
-		instagram: 'https://www.instagram.com/walter.02.12/',
+		instagram: 'https://www.instagram.com/stephen.02.12/',
 		facebook: 'https://www.facebook.com/hieu.buiminh.37',
 		github: 'https://github.com/Hieu-BuiMinh',
 		linkedin: 'https://www.linkedin.com/in/minh-hieu-bui-78a315208',
