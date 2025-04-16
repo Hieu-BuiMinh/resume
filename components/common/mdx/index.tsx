@@ -11,6 +11,7 @@ import ImageZoom from '@/components/common/image/image-zoom'
 import Heading from '@/components/common/mdx/custom-components/heading'
 import ProjectBlock from '@/components/common/mdx/custom-components/project-block'
 import TechBadge from '@/components/common/mdx/custom-components/tech-badge'
+import { Timeline, TimelineItem } from '@/components/common/mdx/custom-components/timeline'
 import WorkExperienceBlock from '@/components/common/mdx/custom-components/work-experience-block'
 import VideoZoom from '@/components/common/video/video-zoom'
 import { cn } from '@/lib/utils'
@@ -73,6 +74,8 @@ const components = {
 	TechBadge,
 	WorkExperienceBlock,
 	ProjectBlock,
+	Timeline,
+	TimelineItem,
 }
 
 interface MdxProps {
